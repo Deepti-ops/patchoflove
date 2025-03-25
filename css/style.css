@@ -55,7 +55,7 @@ h6 {
     letter-spacing: 0;
     font-weight: normal;
     position: relative;
-    padding: 0 0 10px 0;
+    padding: 0 0 0 0;
     font-weight: normal;
     line-height: normal;
     color: #111111;
@@ -142,8 +142,9 @@ a,
 }
 
 img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
+    margin-bottom: 10px;
 }
 
  :focus {
@@ -222,7 +223,7 @@ button {
 
 .header_bg {
     background: #ffffff;
-    border-bottom: 1px solid #808080;
+
 }
 
 .bg-light {
@@ -254,8 +255,13 @@ button {
 }
 
 .navbar-brand {
-    width:60%;
     margin: 0px;
+    float: left;
+    margin-top: 12px;
+}
+.navbar-brand img {
+      width: 30%;
+      padding: 0px;
 
 }
 
@@ -278,9 +284,13 @@ button {
 
 .banner_taital {
     width: 30%;
-    font-size: 60px;
+    font-size: 58px;
     color: #222222;
     font-weight: bold;
+
+}
+.banner_img {
+  height:40vh;
 }
 
 .banner_text {
@@ -324,7 +334,8 @@ button {
     /* height: auto; */
     border: none;
     text-indent: 0;
-    padding-top: 25px;
+    padding-top: 10px;
+    padding-left: 10px;
     justify-content: center;
     align-items: center;
     font-weight: bold;
@@ -381,7 +392,8 @@ button {
 }
 
 .about_img {
-    width: 100%;
+    width: 80vh;
+    padding: 10px;
     float: left;
 }
 
@@ -436,16 +448,15 @@ button {
     height: 6px;
     bottom: 20px;
     right: 160px;
-    border-radius: 4px;
+
 }
 
 .cream_text {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 12px;
     color: #373736;
     margin: 0px;
-
 }
 
 .cream_section_2 {
@@ -455,60 +466,34 @@ button {
 }
 
 .cream_box {
-    width: 100%;
-    height:130%;
-    float: left;
-    background-image: linear-gradient( 0deg, #ffffff 37%, #ffffff 37%);
+    width: 90%;
+    float: center;
+    background-image: linear-gradient( 0deg, #d9d9d9 17%, #f2f2f0 17%);
+    height: auto;
     padding: 20px;
-
-
+    box-shadow: 0px 0px 50px 5px #808080 30%;
 }
 
 .cream_box:hover {
-    background-image: linear-gradient( 0deg, #ffffff 37%, #bc9090 37%);
-
+    background-image: linear-gradient( 0deg, #d9d9d9 17%, #faf0c7 17%);
 }
 
 .cream_img {
     width: 100%;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     min-height: 210px;
-
 }
-
-
 
 .romper_text {
     width: 100%;
-    font-size: 22px;
-    color: #373736;
-    text-align: left;
+    font-size: 18px;
     font-weight: bold;
-}
-
-.cart_bt {
-    width: 150px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 10px;
-}
-
-.cart_bt a {
-    width: 100%;
-    float: left;
-    font-size: 16px;
-    text-align: center;
-    border: 1px solid #808080;
-    color: #808080;
-    padding: 8px 0px;
-    border-radius: 40px;
-}
-
-.cart_bt a:hover {
-    border: 1px solid #373736;
     color: #373736;
+    text-align: center;
+    margin-top: 2px;
 }
+
 
 
 
@@ -533,22 +518,15 @@ button {
     font-weight: bold;
 }
 
-.services_taital::after {
-    position: absolute;
-    content: '';
-    width: 80px;
-    height: 6px;
-    bottom: 25px;
-    right: 160px;
-    border-radius: 4px;
-}
-
 .services_text {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight:bold;
     color: #373736;
     margin: 0px;
+    padding-top: 2px;
+    margin-bottom: 3px;
 }
 
 .services_section_2 {
@@ -569,6 +547,7 @@ button {
     width: 100%;
     float: left;
     font-size: 20px;
+    font-weight:bold;
     color: #373736;
 }
 
@@ -619,7 +598,7 @@ button {
     content: '';
     width: 120px;
     height: 102px;
-    background-image: url(../images/quick-icon.png);
+
     background-size: 100%;
     left: 40px;
     top: 290px;
@@ -630,7 +609,7 @@ button {
     content: '';
     width: 120px;
     height: 102px;
-    background-image: url(../images/quick-icon.png);
+
     background-size: 100%;
     right: 40px;
     top: 290px;
@@ -640,7 +619,7 @@ button {
     width: 82%;
     margin: 0 auto;
     background-color: #ffffff;
-    box-shadow: 0px 0px 20px 10px #ededec;
+    box-shadow: 0px 0px 50px 5px #808080 10%;
     padding: 50px 40px 0px 40px;
     height: 300px;
 }
@@ -808,7 +787,7 @@ textarea#comment::placeholder {
 }
 
 .location_text li a:hover {
-    color: #ffffff;
+    color: #808080;
 }
 
 .padding_left_10 {
@@ -824,14 +803,15 @@ textarea#comment::placeholder {
 }
 
 .padding_left_10.active {
-    color: #808080;
+    color: #ffffff;
 }
 
 .footer_social_icon {
-    width: 100%;
-    float: right;
-    padding-top: 20px;
-    text-align: right;
+  width: 100%;
+  float: right;
+  margin-right: 30px;
+  padding-top: 20px;
+  text-align: right;
 }
 
 .footer_social_icon ul {
@@ -897,7 +877,7 @@ textarea#comment.update_mail::placeholder {
 /* copyright section start */
 
 .copyright_section {
-    width: 100%;
+    width: 100vh;
     float: left;
     background-color: #262526;
     height: auto;
